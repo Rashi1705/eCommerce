@@ -1,0 +1,25 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Custom utility classes if needed */
+.font-titleFont {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Any additional custom styles for your e-commerce app */
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
