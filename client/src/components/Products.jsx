@@ -11,7 +11,7 @@ const Products = ({ products }) => {
           Discover our curated collection of high-quality products designed to meet your needs
         </p>
       </div>
-      <div className="max-w-screen-xl mx-auto flex justify-center flex-wrap gap-4 px-4">
+      <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-4 justify-items-center">
         {products.map((item) => (
           <ProductCard key={item._id} product={item} />
         ))}

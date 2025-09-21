@@ -25,15 +25,15 @@ const ProductCard = ({ product }) => {
   };
 
   return (
-    <div className="group relative rounded-2xl overflow-hidden border border-gray-300 shadow-lg hover:shadow-xl transition-shadow">
+    <div className="group relative rounded-2xl overflow-hidden border border-gray-300 shadow-lg hover:shadow-xl transition-shadow bg-white flex flex-col items-center w-72 mx-auto">
       <figure
         onClick={handleDetails}
-        className="w-60 sm:w-72 lg:w-full h-96 hover:cursor-pointer overflow-hidden"
+        className="w-64 h-64 flex items-center justify-center bg-gray-100 rounded-lg overflow-hidden hover:cursor-pointer"
       >
         <img
           src={product.image}
           alt="productImg"
-          className="lg:w-full h-full object-cover group-hover:scale-110 duration-500"
+          className="max-w-full max-h-full object-contain group-hover:scale-105 duration-300"
         />
       </figure>
       <div className="info border border-b-0 px-2 py-4 w-full flex flex-col gap-2 bg-white">

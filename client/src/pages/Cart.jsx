@@ -36,7 +36,11 @@ const Cart = () => {
     <div className="mt-24 flex flex-col items-center min-h-screen">
       <div className="flex gap-3 flex-wrap sm:flex-nowrap justify-center">
         <div className="w-5/6 sm:w-1/2 md:w-2/3">
-          <CartItem />
+          {productData.length > 0 ? (
+            productData.map((item) => <CartItem key={item._id} item={item} />)
+          ) : (
+            <p className="text-center text-gray-500">Your cart is empty.</p>
+          )}
         </div>
         <div className="w-5/6 sm:w-1/2 pl-5 md:pl-0 md:w-1/3 text-gray-700">
           <h2 className="w-full font-titleFont font-semibold text-xl border-b-2 border-gray-300 pb-2 mb-4">
