@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { decreaseQuantity, deleteItem, increaseQuantity } from "../redux/bazarSlice";
+import { decrementQuantity, deleteItem, increamentQuantity } from "../redux/bazarSlice";
 import { MdOutlineClose } from "react-icons/md";
 
 const CartItem = ({ item }) => {
